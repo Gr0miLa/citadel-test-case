@@ -34,11 +34,21 @@
 
 ### 2. Использование парсера
 Файлы для теста хранятся в директории reports, поэтому после сборки 
-используйте команду 
+используйте команду (из папки build)
    ```bash
     ./parser ../reports/*.txt
    ```
 
+Получаем следующий вывод:
+```
+sensor1:
+    temp: max=42(file2.txt), min=36.6(file1.txt)
+    speed: max=1.4 Gbit/s(file2.txt), min=765 Mbit/s(file1.txt)
+
+sensor2:
+    state: max=включен(file2.txt), min=выключен(file1.txt)
+    speed: max=1.5 Kbit/s(file1.txt), min=0 bit/s(file2.txt)
+```
 
 ## Структура проекта
 ```
